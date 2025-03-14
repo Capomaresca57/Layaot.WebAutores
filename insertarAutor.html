@@ -1,27 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Insertar autor</title>
+  <meta charset="UTF-8">
+  <title>Insertar Autor</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-	<h1>Nuevo autor</h1>
-<form action="resultadoInsertar.jsp">
-		
-	<label for="name">Nombre</label>
-	<input name="nombre" type="text" id="name"/>
-	<br>
-	<br>
-	<label for="nationality">Nacionalidad</label>
-	<input name="Nacionalidad" type="text" id="nationality"/>
-	<br>
-	<br>
-	<label for="date">Fecha de nacimiento</label>
-	<input name="Fecha" type="date" id="date"/>
-	<br>
-	<br>
-	<button><a href="resultadoInsertar.jsp">Aceptar</a></button>
-	<button><a href="index.html">Volver</a></button>
-</form>
+  <!-- Contenedor del encabezado -->
+  <header class="header">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="Logo" width="100">
+    </div>
+    <!-- Menú Desplegable -->
+		<div class="menu">
+				<div class="parent">
+				<div class="div1"> </div>
+				<div class="div2"> </div>
+				<div class="div3"> </div>
+				<div class="div4"> </div>
+				</div>
+		    </div>
+    <!-- Descripción de la Funcionalidad -->
+    <div class="descripcion">
+      <p>Ingrese los datos del nuevo autor que desea agregar a la base de datos.</p>
+    </div>
+  </header>
+
+  <!-- Formulario de inserción de autor -->
+  <main class="workspace">
+    <h2>Nuevo Autor</h2>
+    <form action="resultadoInsertar.jsp" method="post">
+      <label for="name">Nombre:</label>
+      <input name="nombre" type="text" id="name" required>
+      <br><br>
+      <label for="nationality">Nacionalidad:</label>
+      <input name="nacionalidad" type="text" id="nationality" required>
+      <br><br>
+      <label for="date">Fecha de nacimiento:</label>
+      <input name="fecha" type="date" id="date" required>
+      <br><br>
+      <button type="submit">Aceptar</button>
+      <button type="button" onclick="window.location.href='index.html'">Volver</button>
+    </form>
+  </main>
 </body>
 </html>
+0

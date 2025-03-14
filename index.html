@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Gestion de autores</title>
+  <meta charset="UTF-8">
+  <title>Gestión de Autores</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-	<h1>Gestion de autores</h1>
-	<button><a href="insertarAutor.html">Nuevo autor</a></button>
-	<br>
-	<br>
-	<button><a href="">Listar autores</a></button>
+  <!-- Contenedor del encabezado -->
+  <header class="header">
+    <!-- Logo -->
+    <div class="logo">
+      <img  id="logo" scr="estilos\logo.png"></img>
+    </div>
+    <!-- Menú Desplegable -->
+    <div class="menu">
+		<div class="parent">
+		<div class="div1"> </div>
+		<div class="div2"> </div>
+		<div class="div3"> </div>
+		<div class="div4"> </div>
+		</div>
+    </div>
+    <!-- Descripción de la Funcionalidad -->
+    <div class="descripcion">
+      <p>Gestione los autores de su biblioteca. Puede agregar nuevos autores o listar los existentes.</p>
+    </div>
+  </header>
+
+  <!-- Espacio de trabajo -->
+  <main class="workspace">
+    <h2>Autores</h2>
+    <button><a href="insertarAutor.html">Nuevo autor</a></button>
+    <br><br>
+    <button><a href="#">Listar autores</a></button>
+    <!-- Aquí puedes agregar una tabla o lista que muestre los autores existentes -->
+  </main>
 </body>
 </html>
